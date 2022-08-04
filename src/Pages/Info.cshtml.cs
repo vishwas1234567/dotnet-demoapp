@@ -1,4 +1,4 @@
-﻿using Microsoft.ApplicationInsights;
+using Microsoft.ApplicationInsights;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace DotnetDemoapp.Pages
@@ -44,7 +44,7 @@ namespace DotnetDemoapp.Pages
             // Hostname and OS info
             hostname = System.Environment.MachineName;
             osDesc = System.Runtime.InteropServices.RuntimeInformation.OSDescription;
-            if (osDesc.Contains("#"))
+            if (osDesc.Contains('#'))
             {
                 osDesc = osDesc.Substring(0, osDesc.IndexOf('#'));
             }
